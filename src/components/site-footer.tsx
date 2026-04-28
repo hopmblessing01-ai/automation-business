@@ -52,7 +52,7 @@ export function SiteFooter() {
               </p>
               <p className="mt-4 max-w-sm text-sm leading-relaxed text-slate-300">
                 We design and ship automation, CRM, and integrations your team can
-                run after handover—documented, monitored, and built for how work
+                run after handover - documented, monitored, and built for how work
                 actually happens.
               </p>
               <div className="mt-8 rounded-2xl border border-white/10 bg-white/[0.06] p-5 shadow-lg shadow-black/20 backdrop-blur-sm ring-1 ring-white/5">
@@ -60,7 +60,7 @@ export function SiteFooter() {
                   Ready when you are
                 </p>
                 <p className="mt-2 text-sm text-slate-300">
-                  Tell us what is slow, manual, or breaking—and we will reply with
+                  Tell us what is slow, manual, or breaking - and we will reply with
                   next steps within one business day.
                 </p>
                 <Link
@@ -179,7 +179,7 @@ export function SiteFooter() {
           <div className="flex flex-col items-start justify-between gap-6 pt-8 sm:flex-row sm:items-center">
             <p className="max-w-xl text-xs leading-relaxed text-slate-400">
               Comet is a systems partner for growing teams: we align on outcomes,
-              map your stack, then automate with clear ownership—not a black box.
+              map your stack, then automate with clear ownership - not a black box.
             </p>
             <div className="flex flex-wrap gap-x-5 gap-y-2 text-xs font-medium text-slate-400">
               <a

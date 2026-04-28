@@ -13,7 +13,7 @@ export function ServicesTeaserSection() {
             Services
           </p>
           <h2 className="mt-4 max-w-2xl text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl">
-            Implementation and consulting—on dedicated pages
+            Implementation and consulting - on dedicated pages
           </h2>
           <p className="mt-4 max-w-2xl text-base leading-relaxed text-slate-600">
             Browse every offering with imagery, detail pages for delivery work,

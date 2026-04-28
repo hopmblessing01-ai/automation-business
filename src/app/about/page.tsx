@@ -17,7 +17,7 @@ import {
 export const metadata: Metadata = {
   title: "About us",
   description:
-    "Comet builds maintainable automation and CRM systems for growing teams—and the people behind the work.",
+    "Comet builds maintainable automation and CRM systems for growing teams - and the people behind the work.",
 };
 
 export default function AboutPage() {
@@ -71,7 +71,7 @@ export default function AboutPage() {
               Team
             </h2>
             <p className="mt-3 max-w-2xl text-slate-600">
-              A small senior team—you work directly with the people shipping your
+              A small senior team - you work directly with the people shipping your
               systems, not a rotating bench.
             </p>
           </Reveal>
@@ -116,7 +116,7 @@ export default function AboutPage() {
                 Want the same clarity on your stack?
               </p>
               <p className="mt-2 max-w-xl text-sm text-slate-600">
-                Start with a free consultation—we’ll map constraints, quick wins,
+                Start with a free consultation - we’ll map constraints, quick wins,
                 and a sensible first milestone.
               </p>
               <Link

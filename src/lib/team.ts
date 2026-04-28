@@ -6,12 +6,12 @@ export type TeamMember = {
   imageAlt: string;
 };
 
-/** Placeholder team—swap names, roles, and images for your real roster. */
+/** Placeholder team - swap names, roles, and images for your real roster. */
 export const teamMembers: TeamMember[] = [
   {
     name: "Jordan Ellis",
     role: "Founder & Lead Systems Architect",
-    bio: "Former ops lead turned integrator—focuses on CRM, revenue systems, and pragmatic AI guardrails.",
+    bio: "Former ops lead turned integrator - focuses on CRM, revenue systems, and pragmatic AI guardrails.",
     image:
       "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=800&q=80",
     imageAlt: "Portrait of Jordan Ellis",

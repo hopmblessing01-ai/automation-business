@@ -1,6 +1,6 @@
 export const aboutIntro = {
   eyebrow: "About",
-  headline: "Systems thinking—without the jargon",
+  headline: "Systems thinking - without the jargon",
   body:
     "We partner with founders and operators who are done patching problems with more headcount. Our work is designed to be maintainable: clear naming, documented flows, and sensible fallbacks when APIs misbehave.",
 };
@@ -14,7 +14,7 @@ export const aboutValues = [
   {
     mark: "∞",
     title: "Simple, scalable systems",
-    body: "Prefer boring patterns that your team can extend—not one-off hacks.",
+    body: "Prefer boring patterns that your team can extend - not one-off hacks.",
   },
   {
     mark: "↗",

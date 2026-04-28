@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 import { useEffect, useRef } from "react";
 
 /**
- * Inertial “coast” after wheel/trackpad — smooth interpolation instead of
+ * Inertial “coast” after wheel/trackpad  -  smooth interpolation instead of
  * stopping the instant input ends. Skipped when user prefers reduced motion.
  */
 export function SmoothScroll({ children }: { children: React.ReactNode }) {

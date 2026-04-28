@@ -32,11 +32,11 @@ export const services: Record<ServiceSlug, ServicePage> = {
   crm: {
     slug: "crm",
     title: "CRM Systems Setup & Optimization",
-    headline: "A CRM your team actually uses—clean data, sharp automation",
+    headline: "A CRM your team actually uses - clean data, sharp automation",
     summary:
-      "We design lifecycle stages, ownership rules, and automation that match how you sell and deliver—not a generic template.",
+      "We design lifecycle stages, ownership rules, and automation that match how you sell and deliver - not a generic template.",
     body:
-      "Most CRM pain is not the tool—it is unclear stages, noisy fields, and automations that fight reality. We rebuild the model around your motion, then layer reporting and integrations so operators and leadership see the same truth.",
+      "Most CRM pain is not the tool - it is unclear stages, noisy fields, and automations that fight reality. We rebuild the model around your motion, then layer reporting and integrations so operators and leadership see the same truth.",
     bullets: [
       "Pipeline architecture aligned to your motion (PLG, sales-led, hybrid)",
       "Lifecycle emails, tasks, and SLAs triggered from real behavior",
@@ -53,7 +53,7 @@ export const services: Record<ServiceSlug, ServicePage> = {
       {
         title: "Stage & field design",
         description:
-          "Stages, required fields, and handoff rules that match how deals really move—not a textbook funnel.",
+          "Stages, required fields, and handoff rules that match how deals really move - not a textbook funnel.",
       },
       {
         title: "Automation with guardrails",
@@ -82,7 +82,7 @@ export const services: Record<ServiceSlug, ServicePage> = {
       "We treat workflows like product: versioning, naming, logging, and clear owners. That means fewer silent failures, faster debugging when a vendor changes an API, and a path for your team to extend flows without fear.",
     bullets: [
       "Idempotent patterns, dedupe, and safe replays when vendors glitch",
-      "Structured logging and alerting so failures are obvious—not silent",
+      "Structured logging and alerting so failures are obvious - not silent",
       "Versioned flows with naming conventions your team can extend",
       "Tool selection guidance: when to use Make vs n8n vs native integrations",
     ],
@@ -101,7 +101,7 @@ export const services: Record<ServiceSlug, ServicePage> = {
       {
         title: "Observable by default",
         description:
-          "Structured logs and alerts tied to business outcomes—not just “flow failed” with no context.",
+          "Structured logs and alerts tied to business outcomes - not just “flow failed” with no context.",
       },
       {
         title: "Maintainable structure",
@@ -118,11 +118,11 @@ export const services: Record<ServiceSlug, ServicePage> = {
   ai: {
     slug: "ai",
     title: "AI Chatbots & Voice Automation",
-    headline: "Assistants with guardrails—qualified, routed, measurable",
+    headline: "Assistants with guardrails - qualified, routed, measurable",
     summary:
       "From chat widgets to voice agents, we implement AI that escalates gracefully and logs outcomes for continuous improvement.",
     body:
-      "Great AI in ops is boring on purpose: tight scopes, explicit handoff, and traces you can audit. We pair UX writing with engineering so customers get fast answers—and your team gets structured outcomes in CRM or ticketing without surprises.",
+      "Great AI in ops is boring on purpose: tight scopes, explicit handoff, and traces you can audit. We pair UX writing with engineering so customers get fast answers - and your team gets structured outcomes in CRM or ticketing without surprises.",
     bullets: [
       "Intent design, knowledge boundaries, and human handoff rules",
       "CRM and ticketing updates driven by conversation outcomes",
@@ -144,7 +144,7 @@ export const services: Record<ServiceSlug, ServicePage> = {
       {
         title: "Systems of record",
         description:
-          "Tickets, deals, and tags updated from conversation outcomes—not orphaned chats.",
+          "Tickets, deals, and tags updated from conversation outcomes - not orphaned chats.",
       },
       {
         title: "Evals before deploy",

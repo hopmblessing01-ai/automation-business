@@ -104,7 +104,7 @@ export default async function ServicePage({ params }: Props) {
               Where we focus first
             </h2>
             <p className="mt-3 max-w-2xl text-slate-600">
-              Practical outcomes your operators will feel—not slide decks.
+              Practical outcomes your operators will feel - not slide decks.
             </p>
           </Reveal>
 

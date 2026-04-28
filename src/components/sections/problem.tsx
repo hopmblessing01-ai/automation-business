@@ -20,7 +20,7 @@ const pains = [
   },
   {
     title: "Missed leads",
-    body: "Slow follow-ups and leaky handoffs quietly cost revenue—especially when volume spikes.",
+    body: "Slow follow-ups and leaky handoffs quietly cost revenue - especially when volume spikes.",
     icon: Inbox,
   },
   {
@@ -43,7 +43,7 @@ export function ProblemSection() {
           </h2>
           <p className="mt-4 max-w-2xl text-base leading-relaxed text-slate-600">
             We help founders and operators replace fragile manual processes with
-            dependable systems—so your business runs even when you step away.
+            dependable systems - so your business runs even when you step away.
           </p>
         </Reveal>
 

@@ -104,7 +104,7 @@ export function ContactForm() {
       ) : null}
       {status === "success" ? (
         <p className="mt-4 text-sm font-medium text-emerald-700">
-          Thanks — your message is in. We’ll get back to you shortly.
+          Thanks  -  your message is in. We’ll get back to you shortly.
         </p>
       ) : null}
 

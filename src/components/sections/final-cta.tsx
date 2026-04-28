@@ -25,7 +25,7 @@ export function FinalCtaSection() {
                 </h2>
                 <p className="relative mx-auto mt-4 max-w-xl text-base text-blue-100/95 lg:mx-0">
                   Tell us what slows your team down. We’ll map the fastest path
-                  to reliable automation—and what it will take to ship.
+                  to reliable automation - and what it will take to ship.
                 </p>
                 <div className="relative mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row lg:justify-start">
                   <a

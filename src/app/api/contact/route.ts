@@ -35,7 +35,7 @@ export async function POST(request: Request) {
     );
   }
 
-  // Hook: forward to CRM, email provider, or Slack — placeholder logs in dev.
+  // Hook: forward to CRM, email provider, or Slack  -  placeholder logs in dev.
   if (process.env.NODE_ENV === "development") {
     console.info("[contact]", { name, email, company: json.company, message });
   }

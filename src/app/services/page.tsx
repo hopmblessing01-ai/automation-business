@@ -11,7 +11,7 @@ import { servicesPageHero } from "@/lib/page-hero-assets";
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "CRM, workflow automation, AI assistants, and automation consulting—from discovery through delivery.",
+    "CRM, workflow automation, AI assistants, and automation consulting - from discovery through delivery.",
 };
 
 export default function ServicesIndexPage() {
@@ -36,7 +36,7 @@ export default function ServicesIndexPage() {
             </h1>
             <p className="mt-5 max-w-2xl text-lg leading-relaxed text-white/88 [text-shadow:0_1px_16px_rgba(0,0,0,0.35)]">
               Every engagement uses the same documentation habits and ownership
-              model—whether you need consulting, implementation, or both.
+              model - whether you need consulting, implementation, or both.
             </p>
           </Reveal>
         </PageHero>

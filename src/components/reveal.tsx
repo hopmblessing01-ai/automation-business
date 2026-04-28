@@ -19,7 +19,7 @@ type RevealProps = {
   durationMs?: number;
 };
 
-/** Smooth deceleration — comfortable for scroll-driven UI */
+/** Smooth deceleration  -  comfortable for scroll-driven UI */
 const EASE = "cubic-bezier(0.33, 1, 0.32, 1)";
 
 const variantClasses: Record<

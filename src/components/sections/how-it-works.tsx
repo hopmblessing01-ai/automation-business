@@ -10,12 +10,12 @@ import {
 const steps = [
   {
     title: "Understand your business",
-    body: "We interview stakeholders, review tools, and align on outcomes—not vanity metrics.",
+    body: "We interview stakeholders, review tools, and align on outcomes - not vanity metrics.",
     icon: Search,
   },
   {
     title: "Map processes",
-    body: "Current-state flows, exceptions, and ownership—so automation fits how work really happens.",
+    body: "Current-state flows, exceptions, and ownership - so automation fits how work really happens.",
     icon: Map,
   },
   {
@@ -44,7 +44,7 @@ export function HowItWorksSection() {
             How it works
           </p>
           <h2 className="mt-4 max-w-2xl text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl">
-            A disciplined process—without enterprise bloat
+            A disciplined process - without enterprise bloat
           </h2>
         </Reveal>
 

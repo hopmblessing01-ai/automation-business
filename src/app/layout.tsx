@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     template: "%s | Comet",
   },
   description:
-    "We design and automate business systems that scale your operations—from CRM setup to AI-powered workflows. Book a free consultation.",
+    "We design and automate business systems that scale your operations - from CRM setup to AI-powered workflows. Book a free consultation.",
   keywords: [
     "business automation",
     "CRM consulting",
