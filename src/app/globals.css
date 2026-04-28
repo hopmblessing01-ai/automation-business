@@ -1,0 +1,259 @@
+@import "tailwindcss";
+
+:root {
+  --bg-page: #f4f7fb;
+  --bg-elevated: #ffffff;
+  --text-primary: #0f172a;
+  --text-muted: #475569;
+  --royal: #1d4ed8;
+  --royal-dark: #1e3a8a;
+  --accent-sky: #38bdf8;
+  --border-soft: #e2e8f0;
+}
+
+@theme inline {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --color-bg-deep: var(--bg-page);
+  --color-bg-elevated: var(--bg-elevated);
+  --color-text-primary: var(--text-primary);
+  --color-text-muted: var(--text-muted);
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(22px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes float-soft {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+@keyframes glow-pulse {
+  0%,
+  100% {
+    opacity: 0.35;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.65;
+    transform: scale(1.04);
+  }
+}
+
+@keyframes hero-glow {
+  0%,
+  100% {
+    opacity: 0.55;
+  }
+  50% {
+    opacity: 0.9;
+  }
+}
+
+@keyframes hero-line-up {
+  from {
+    opacity: 0;
+    transform: translateY(32px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-hero-line {
+  animation: hero-line-up 1.35s cubic-bezier(0.16, 1, 0.35, 1) both;
+}
+
+.hero-stagger-1 {
+  animation-delay: 0.08s;
+}
+
+.hero-stagger-2 {
+  animation-delay: 0.22s;
+}
+
+.hero-stagger-3 {
+  animation-delay: 0.38s;
+}
+
+.hero-stagger-4 {
+  animation-delay: 0.52s;
+}
+
+.hero-stagger-5 {
+  animation-delay: 0.66s;
+}
+
+@keyframes glass-sweep {
+  from {
+    transform: translateX(-130%) skewX(-14deg);
+  }
+  to {
+    transform: translateX(130%) skewX(-14deg);
+  }
+}
+
+.animate-fade-up {
+  animation: fade-up 0.85s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.animate-fade-in {
+  animation: fade-in 1s ease both;
+}
+
+.animate-delay-100 {
+  animation-delay: 100ms;
+}
+
+.animate-delay-200 {
+  animation-delay: 200ms;
+}
+
+.animate-delay-300 {
+  animation-delay: 300ms;
+}
+
+.animate-delay-400 {
+  animation-delay: 400ms;
+}
+
+.animate-delay-500 {
+  animation-delay: 500ms;
+}
+
+.animate-float-soft {
+  animation: float-soft 5s ease-in-out infinite;
+}
+
+.animate-glow-pulse {
+  animation: glow-pulse 4s ease-in-out infinite;
+}
+
+.animate-hero-glow {
+  animation: hero-glow 6s ease-in-out infinite;
+}
+
+/* Moving white highlight on hover (glass-style sheen) */
+.card-glass-hover {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.card-glass-hover::before {
+  content: "";
+  position: absolute;
+  inset: -20% -40%;
+  z-index: 1;
+  background: linear-gradient(
+    110deg,
+    transparent 0%,
+    transparent 38%,
+    rgba(255, 255, 255, 0.75) 50%,
+    transparent 62%,
+    transparent 100%
+  );
+  transform: translateX(-140%) skewX(-14deg);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.35s ease;
+}
+
+.card-glass-hover:hover::before {
+  opacity: 1;
+  animation: glass-sweep 1.35s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.card-glass-hover > * {
+  position: relative;
+  z-index: 2;
+}
+
+.btn-shine {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-shine::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  translate: -100% 0;
+  background: linear-gradient(
+    105deg,
+    transparent 0%,
+    transparent 40%,
+    rgba(255, 255, 255, 0.45) 50%,
+    transparent 60%,
+    transparent 100%
+  );
+  transition: translate 0.55s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-shine:hover::after {
+  translate: 100% 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-up,
+  .animate-fade-in,
+  .animate-float-soft,
+  .animate-glow-pulse,
+  .animate-hero-glow,
+  .animate-hero-line {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  .btn-shine::after {
+    display: none;
+  }
+
+  .card-glass-hover::before {
+    display: none !important;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(
+      180deg,
+      #f8fafc 0%,
+      #f1f5f9 35%,
+      #eff6ff 70%,
+      #f8fafc 100%
+    );
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+}
+
+::selection {
+  background: rgba(59, 130, 246, 0.22);
+  color: #0f172a;
+}
