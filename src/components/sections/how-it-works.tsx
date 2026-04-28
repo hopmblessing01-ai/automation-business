@@ -63,7 +63,7 @@ export function HowItWorksSection() {
               >
                 <li className={`${serviceCardClass} ${serviceCardProcessLayoutClass}`}>
                   <div className="relative flex shrink-0 items-center gap-4 sm:block sm:min-w-[4.5rem]">
-                    <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-blue-600 to-blue-700 text-xs font-bold text-white shadow-md ring-4 ring-slate-100 transition group-hover:scale-105 group-hover:ring-white/25 sm:absolute sm:left-3 sm:top-8">
+                    <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-blue-600 to-blue-700 text-xs font-bold text-white shadow-md ring-4 ring-slate-100 transition group-hover:scale-105 group-hover:ring-white/25 sm:absolute sm:left-3 sm:top-3">
                       {i + 1}
                     </div>
                     <span className="font-mono text-xs text-slate-500 transition group-hover:text-blue-50 sm:hidden">
