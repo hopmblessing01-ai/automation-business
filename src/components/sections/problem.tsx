@@ -1,4 +1,4 @@
-import { AlertTriangle, Link2Off, Inbox, EyeOff } from "lucide-react";
+import { AlertTriangle, Bot, Link2Off, Inbox } from "lucide-react";
 import { Reveal } from "@/components/reveal";
 import {
   serviceCardBodyClass,
@@ -24,9 +24,9 @@ const pains = [
     icon: Inbox,
   },
   {
-    title: "Lack of visibility",
-    body: "Leadership can’t see pipeline health, workload, or bottlenecks without digging through five systems.",
-    icon: EyeOff,
+    title: "No chatbot or voice agent coverage",
+    body: "When calls and chats are missed, leads go cold. AI chatbots and voice agents can qualify, answer, and route inquiries instantly.",
+    icon: Bot,
   },
 ];
 

@@ -4,14 +4,21 @@ import { toolCardRowClass, toolCardRowLabelClass } from "@/lib/service-card-styl
 
 const tools = [
   { name: "HubSpot", slug: "hubspot", color: "ff7a59" },
-  { name: "Slack", slug: "slack", color: "4A154B" },
-  { name: "Stripe", slug: "stripe", color: "635bff" },
+  { name: "Zoho CRM", slug: "zoho", color: "e42527" },
   { name: "n8n", slug: "n8n", color: "ea4b71" },
   { name: "Zapier", slug: "zapier", color: "ff4a00" },
-  { name: "Make", slug: "integromat", color: "6d00cc" },
+  { name: "Make", slug: "make", color: "6d00cc" },
+  { name: "Power Automate", slug: "microsoftpowerautomate", color: "0066ff" },
+  { name: "Pipedrive", slug: "pipedrive", color: "171a31" },
+  { name: "Salesforce", slug: "salesforce", color: "00a1e0" },
   { name: "Airtable", slug: "airtable", color: "18bfff" },
   { name: "Notion", slug: "notion", color: "000000" },
-  { name: "Google", slug: "google", color: "4285f4" },
+  { name: "Monday", slug: "mondaydotcom", color: "ff3d57" },
+  { name: "ClickUp", slug: "clickup", color: "7b68ee" },
+  { name: "Twilio", slug: "twilio", color: "f22f46" },
+  { name: "Vapi", slug: "vapi", color: "5b6cff" },
+  { name: "Retell", slug: "retell", color: "2563eb" },
+  { name: "Meta", slug: "meta", color: "0866ff" },
 ];
 
 export function ToolsSection() {
@@ -26,8 +33,8 @@ export function ToolsSection() {
             Tools & platforms we implement daily
           </h2>
           <p className="mt-4 max-w-2xl text-base text-slate-600">
-            We meet you where you operate—then tighten the seams between HubSpot,
-            finance, comms, and internal ops.
+            We meet you where you operate, then connect CRM, automation, project
+            management, communication, and finance into one reliable system.
           </p>
         </Reveal>
 
@@ -51,7 +58,6 @@ export function ToolsSection() {
                 </div>
                 <span className={`min-w-0 flex-1 ${toolCardRowLabelClass}`}>
                   {t.name}
-                  {t.name === "Google" ? " Workspace" : ""}
                 </span>
               </div>
             </Reveal>

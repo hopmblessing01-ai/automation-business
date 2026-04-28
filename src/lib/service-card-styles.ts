@@ -1,6 +1,6 @@
 /** Shared “service tile”: glass surface + royal blue on hover + sweep. */
 export const serviceCardClass =
-  "card-glass-hover group relative flex h-full w-full flex-col overflow-hidden rounded-2xl border border-white/50 bg-white/45 p-6 text-left text-inherit no-underline shadow-[0_8px_32px_-8px_rgba(15,23,42,0.08)] backdrop-blur-md transition duration-300 hover:-translate-y-1 hover:border-blue-500/40 hover:bg-blue-700 hover:shadow-xl hover:shadow-blue-900/15 supports-[backdrop-filter]:bg-white/35 sm:p-8 outline-offset-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-blue-600";
+  "card-glass-hover group relative flex h-full w-full flex-col overflow-hidden rounded-2xl border border-white/50 bg-white/45 p-6 text-left text-inherit no-underline shadow-[0_8px_32px_-8px_rgba(15,23,42,0.08)] backdrop-blur-md transition duration-300 hover:-translate-y-1 hover:border-blue-500/40 hover:bg-blue-700 hover:shadow-xl hover:shadow-blue-900/15 supports-[backdrop-filter]:bg-white sm:p-8 outline-offset-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-blue-600";
 
 /** Horizontal body for timeline / process steps on larger screens. */
 export const serviceCardProcessLayoutClass =

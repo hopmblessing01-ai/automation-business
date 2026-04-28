@@ -149,7 +149,7 @@ export function SiteFooter() {
                       Phone
                     </p>
                     <a
-                      href="tel:+15551234567"
+                      href="tel:+447543196059"
                       className="mt-0.5 block font-medium text-white transition hover:text-sky-300 tabular-nums"
                     >
                       +44 7543 196 059
