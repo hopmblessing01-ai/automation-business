@@ -152,7 +152,7 @@ export function SiteFooter() {
                       href="tel:+15551234567"
                       className="mt-0.5 block font-medium text-white transition hover:text-sky-300 tabular-nums"
                     >
-                      +1 (555) 123-4567
+                      +44 7543 196 059
                     </a>
                   </div>
                 </li>

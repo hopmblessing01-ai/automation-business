@@ -95,7 +95,7 @@ export function HeroCarousel() {
     <section
       aria-roledescription="carousel"
       aria-label="Featured services"
-      className="relative isolate min-h-[min(92svh,900px)] w-full touch-pan-y overflow-hidden pt-[6.75rem] sm:pt-[7.25rem]"
+      className="relative isolate h-[clamp(520px,72vw,900px)] w-full touch-pan-y overflow-hidden pt-[6.75rem] sm:pt-[6.25rem]"
       onPointerDown={onPointerDown}
       onPointerMove={onPointerMove}
       onPointerUp={onPointerUp}
@@ -107,7 +107,7 @@ export function HeroCarousel() {
         <div
           key={`${s.src}-${i}`}
           aria-hidden={i !== index}
-          className={`absolute inset-0 transition-opacity duration-700 ease-out ${
+          className={`absolute inset-x-0 bottom-0 top-[6.75rem] transition-opacity duration-700 ease-out sm:top-[6.25rem] ${
             i === index ? "z-0 opacity-100" : "z-0 opacity-0"
           }`}
         >
@@ -118,16 +118,16 @@ export function HeroCarousel() {
             loading={i === 0 ? "eager" : "lazy"}
             fetchPriority={i === 0 ? "high" : "auto"}
             sizes="100vw"
-            className="object-cover object-right"
+            className="object-cover object-[right_top]"
           />
           <div
-            className="pointer-events-none absolute inset-0 bg-gradient-to-r from-blue-950/35 via-blue-900/12 to-transparent"
+            className="pointer-events-none absolute inset-0 bg-gradient-to-r from-blue-900/40 via-blue-700/20 to-blue-500/10"
             aria-hidden
           />
         </div>
       ))}
 
-      <div className="relative z-10 mx-auto flex min-h-[min(78svh,720px)] w-full max-w-6xl select-none flex-col justify-end px-4 pb-16 pt-10 sm:px-6 sm:pb-20 sm:pt-12 lg:px-8">
+      <div className="relative z-10 mx-auto flex h-full w-full max-w-6xl select-none flex-col justify-center px-4 pb-8 pt-6 sm:px-6 sm:pb-16 sm:pt-10 lg:px-8">
         <div key={index} className="max-w-2xl">
           <p
             className="animate-hero-line hero-stagger-1 text-xs font-semibold uppercase tracking-[0.22em] text-sky-200/95"
@@ -142,7 +142,7 @@ export function HeroCarousel() {
               {slide.titleHighlight}
             </span>
           </h1>
-          <p className="animate-hero-line hero-stagger-4 mt-5 max-w-xl text-base leading-relaxed text-slate-200/95 sm:text-lg">
+          <p className="animate-hero-line hero-stagger-4 mt-5 hidden max-w-xl text-base leading-relaxed text-slate-200/95 sm:block sm:text-lg">
             {slide.description}
           </p>
 
@@ -153,28 +153,7 @@ export function HeroCarousel() {
             >
               Book a Free Consultation
             </Link>
-            <a
-              href="mailto:hello@scaleflow.example?subject=Free%20system%20audit"
-              className="inline-flex h-12 items-center justify-center rounded-lg border border-white/25 bg-white/5 px-8 text-sm font-semibold text-white backdrop-blur-sm transition hover:border-white/40 hover:bg-white/10"
-            >
-              Get a Free System Audit
-            </a>
           </div>
-
-          <dl className="mt-12 grid max-w-lg grid-cols-2 gap-6 border-t border-white/15 pt-10 text-sm text-slate-200/90">
-            <div>
-              <dt className="text-xs font-medium uppercase tracking-wide text-slate-400">
-                {slide.statLeftLabel}
-              </dt>
-              <dd className="mt-1 font-semibold text-white">{slide.statLeftValue}</dd>
-            </div>
-            <div>
-              <dt className="text-xs font-medium uppercase tracking-wide text-slate-400">
-                {slide.statRightLabel}
-              </dt>
-              <dd className="mt-1 font-semibold text-white">{slide.statRightValue}</dd>
-            </div>
-          </dl>
         </div>
 
         {dragDirection ? (
@@ -191,12 +170,6 @@ export function HeroCarousel() {
         ) : null}
 
         <div className="mt-12 flex items-center gap-3">
-          <div
-            className="text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-300/90"
-            aria-hidden
-          >
-            Drag to navigate
-          </div>
           <div className="flex flex-1 flex-wrap items-center gap-2 sm:justify-end" role="tablist" aria-label="Slides">
             {heroSlides.map((_, i) => (
               <button

@@ -19,6 +19,11 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
+  icons: {
+    icon: "./favicon.ico",
+    shortcut: "./favicon.ico",
+    apple: "./favicon.ico",
+  },
   title: {
     default: "ScaleFlow Systems | Business Automation & CRM Consulting",
     template: "%s | ScaleFlow Systems",

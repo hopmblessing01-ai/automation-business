@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { Menu, X, Phone } from "lucide-react";
 import { useEffect, useState } from "react";
 
@@ -39,19 +40,17 @@ export function SiteHeader() {
         <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-4 py-3 sm:h-16 sm:px-6 lg:px-8">
           <Link
             href="/"
-            className="group flex items-center gap-2 rounded-xl bg-gradient-to-br from-blue-50 to-white px-2 py-1.5 pr-3 ring-1 ring-blue-100/80 sm:px-3 sm:py-2"
+            className="flex items-center"
             onClick={() => setOpen(false)}
           >
-            <span
-              aria-hidden
-              className="flex h-8 w-8 items-center justify-center rounded-lg bg-blue-700 text-xs font-bold text-white shadow-sm sm:h-9 sm:w-9"
-            >
-              SF
-            </span>
-            <span className="text-sm font-bold tracking-tight text-slate-900 sm:text-base">
-              ScaleFlow
-              <span className="font-semibold text-blue-700">.</span>
-            </span>
+            <Image
+              src="/images/logo-image.png"
+              alt="ScaleFlow logo"
+              width={170}
+              height={42}
+              className="h-9 w-auto sm:h-10"
+              priority
+            />
           </Link>
 
           <nav className="hidden items-center gap-0.5 lg:flex">
@@ -68,13 +67,13 @@ export function SiteHeader() {
 
           <div className="flex items-center gap-2 sm:gap-3">
             <a
-              href="tel:+15551234567"
+              href="tel:+447543196059"
               className="hidden items-center gap-1.5 text-sm font-semibold text-slate-700 transition hover:text-blue-700 md:inline-flex"
             >
               <span className="flex h-8 w-8 items-center justify-center rounded-full bg-blue-50 text-blue-700">
                 <Phone className="h-3.5 w-3.5" strokeWidth={2.5} />
               </span>
-              <span className="tabular-nums">+1 (555) 123-4567</span>
+              <span className="tabular-nums">+44 7543 196 059</span>
             </a>
             <Link
               href="/#contact"
