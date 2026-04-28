@@ -45,7 +45,7 @@ export function SiteHeader() {
           >
             <Image
               src="/images/logo-image.png"
-              alt="ScaleFlow logo"
+              alt="Comet logo"
               width={170}
               height={42}
               className="h-9 w-auto sm:h-10"

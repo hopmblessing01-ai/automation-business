@@ -17,7 +17,7 @@ import {
 export const metadata: Metadata = {
   title: "About us",
   description:
-    "ScaleFlow builds maintainable automation and CRM systems for growing teams—and the people behind the work.",
+    "Comet builds maintainable automation and CRM systems for growing teams—and the people behind the work.",
 };
 
 export default function AboutPage() {

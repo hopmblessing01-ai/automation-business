@@ -25,8 +25,8 @@ export const metadata: Metadata = {
     apple: "./favicon.ico",
   },
   title: {
-    default: "ScaleFlow Systems | Business Automation & CRM Consulting",
-    template: "%s | ScaleFlow Systems",
+    default: "Comet | Business Automation & CRM Consulting",
+    template: "%s | Comet",
   },
   description:
     "We design and automate business systems that scale your operations—from CRM setup to AI-powered workflows. Book a free consultation.",
@@ -37,20 +37,19 @@ export const metadata: Metadata = {
     "n8n",
     "Zapier",
     "Make",
-    "API integrations",
     "AI chatbots",
   ],
   openGraph: {
-    title: "ScaleFlow Systems | Business Automation & CRM Consulting",
+    title: "Comet | Business Automation & CRM Consulting",
     description:
-      "Eliminate manual work and connect your tools into one efficient system. CRM, workflows, integrations, and AI automation.",
+      "Eliminate manual work and connect your tools into one efficient system. CRM, workflows, and AI automation.",
     type: "website",
     locale: "en_US",
     url: siteUrl,
   },
   twitter: {
     card: "summary_large_image",
-    title: "ScaleFlow Systems | Business Automation & CRM Consulting",
+    title: "Comet | Business Automation & CRM Consulting",
     description:
       "Eliminate manual work and connect your tools into one efficient system.",
   },
@@ -60,9 +59,9 @@ export const metadata: Metadata = {
 const organizationJsonLd = {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
-  name: "ScaleFlow Systems",
+  name: "Comet",
   description:
-    "Business automation and systems consulting: CRM, workflow automation, API integrations, and AI assistants.",
+    "Business automation and systems consulting: CRM, workflow automation, and AI assistants.",
   areaServed: "Worldwide",
   serviceType: [
     "CRM consulting",

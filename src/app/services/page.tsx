@@ -11,7 +11,7 @@ import { servicesPageHero } from "@/lib/page-hero-assets";
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "CRM, workflow automation, API integrations, AI assistants, and automation consulting—from discovery through delivery.",
+    "CRM, workflow automation, AI assistants, and automation consulting—from discovery through delivery.",
 };
 
 export default function ServicesIndexPage() {

@@ -1,9 +1,8 @@
-export type ServiceSlug = "crm" | "workflow" | "integrations" | "ai";
+export type ServiceSlug = "crm" | "workflow" | "ai";
 
 export const serviceSlugs: ServiceSlug[] = [
   "crm",
   "workflow",
-  "integrations",
   "ai",
 ];
 
@@ -114,49 +113,6 @@ export const services: Record<ServiceSlug, ServicePage> = {
       { label: "Platforms", value: "n8n · Zapier · Make" },
       { label: "Typical first slice", value: "1–3 flows" },
       { label: "Support window", value: "Agreed SLA" },
-    ],
-  },
-  integrations: {
-    slug: "integrations",
-    title: "API Integrations",
-    headline: "Connect your stack so events flow once—accurately",
-    summary:
-      "We map payloads, auth, and rate limits, then ship integrations that keep HubSpot, Stripe, Slack, and internal tools in sync.",
-    body:
-      "Integrations fail when contracts are fuzzy: which system owns a record, what happens on partial failure, and how you replay a bad day. We document the data model and ship middleware only when it is simpler than bending a brittle connector.",
-    bullets: [
-      "REST/GraphQL integrations with backoff, pagination, and validation",
-      "Webhooks secured and verified; replay strategies for missed events",
-      "Lightweight middleware when no native connector exists",
-      "Documentation and runbooks for on-call and future engineers",
-    ],
-    coverImage:
-      "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=2000&q=85",
-    coverImageAlt: "Server room with network cables and blue lighting",
-    inlineImage:
-      "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1600&q=85",
-    inlineImageAlt: "Abstract technology network globe visualization",
-    highlights: [
-      {
-        title: "Contract-first payloads",
-        description:
-          "Schemas, versioning, and validation so both sides agree on shape before traffic hits production.",
-      },
-      {
-        title: "Auth & limits handled",
-        description:
-          "OAuth refresh, API keys in secure storage, and rate-limit aware batching patterns.",
-      },
-      {
-        title: "Operational clarity",
-        description:
-          "Runbooks for partial outages, replay, and who to page when sync drifts.",
-      },
-    ],
-    stats: [
-      { label: "Common stacks", value: "HubSpot · Stripe · Slack" },
-      { label: "Auth patterns", value: "OAuth · API keys · JWT" },
-      { label: "Docs you get", value: "Architecture + ops" },
     ],
   },
   ai: {
